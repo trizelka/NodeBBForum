@@ -1,0 +1,77 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:layout_marginLeft="50dp" >
+
+    <TextView
+        android:id="@+id/by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="by"
+        android:textSize="12dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/topic_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mainTopic"
+        android:textSize="16sp"
+        android:layout_below="@+id/by" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="lastContent"
+        android:id="@+id/content_post"
+        android:textSize="14dp"
+        android:layout_below="@+id/topic_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:id="@+id/user_post"
+        android:textSize="12dp"
+        android:layout_toRightOf="@+id/initial"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="timestamp"
+        android:id="@+id/timestamp_post"
+        android:textSize="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtOn"
+        android:layout_toEndOf="@+id/txtOn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="at"
+        android:id="@+id/txtOn"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/user_post"
+        android:layout_toEndOf="@+id/user_post"
+        android:textSize="12dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/initial"
+        android:textSize="10dp"
+        android:textColor="@android:color/white"
+        android:paddingTop="3dp"
+        android:paddingLeft="7dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/by"
+        android:layout_toEndOf="@+id/by"
+        android:layout_marginRight="3dp" />
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:id="@+id/categories_logo"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/categories_name"
+            android:textSize="16dp"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_toRightOf="@+id/categories_logo"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/description"
+            android:layout_alignStart="@+id/categories_name"
+            android:textSize="12dp"
+            android:layout_below="@+id/categories_name"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/cpost"
+            android:layout_below="@+id/description"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POSTS : "
+            android:id="@+id/txtPosts"
+            android:layout_below="@+id/description"
+            android:layout_toLeftOf="@+id/cpost"
+            android:layout_toStartOf="@+id/cpost"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/ctopic"
+            android:layout_below="@+id/description"
+            android:layout_toLeftOf="@+id/txtPosts"
+            android:layout_toStartOf="@+id/txtPosts"
+            android:textSize="10dp"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOPICS: "
+            android:id="@+id/txtTopics"
+            android:layout_gravity="center_horizontal"
+            android:textSize="10dp"
+            android:layout_toLeftOf="@+id/ctopic"
+            android:layout_toStartOf="@+id/ctopic"
+            android:layout_below="@+id/description" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aboutdays"
+            android:layout_below="@+id/description"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

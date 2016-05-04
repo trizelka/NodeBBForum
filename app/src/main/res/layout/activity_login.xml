@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_login"
+    tools:context="vpassport.vpassport.Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/logo_forum"
+                android:layout_weight="6.97" />
+
+            <EditText
+                android:id="@+id/txUserLogin"
+                android:layout_width="260dp"
+                android:layout_height="45dp"
+                android:layout_above="@+id/txPasswordLogin"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_text"
+                android:gravity="center"
+                android:hint="email"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:textColorHint="#9e9e9e"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txPasswordLogin"
+                android:layout_width="260dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_text"
+                android:gravity="center"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textColor="#000"
+                android:textColorHint="#9e9e9e"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/txPasswordLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:text="LOGIN"
+                android:textColor="#fff000"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+
+            <!--<Button
+                android:layout_width="260dp"
+                android:layout_height="47dp"
+                android:id="@+id/btnFbLogin"
+                android:layout_below="@+id/txPasswordLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/btn_fb"
+                />
+            <Button
+                android:layout_width="260dp"
+                android:layout_height="47dp"
+                android:id="@+id/btnTwitLogin"
+                android:layout_below="@+id/btnFbLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_twitter"
+                />-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlSignup"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="#26c6da">
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="Don't have an account ?"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@+id/tvSignUp"
+            android:background="@null"
+            android:gravity="center|left"
+            android:text="SIGN UP"
+            android:textColor="#ff9800" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

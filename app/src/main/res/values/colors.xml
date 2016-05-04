@@ -1,0 +1,40 @@
+<resources>
+
+    <!--
+        Check Android Theme colors for color reference:
+        https://developer.android.com/training/material/images/ThemeColors.png
+
+        Refer also to Color palette for the UI colors you should use:
+        http://www.google.com/design/spec/style/color.html#color-ui-color-palette
+    -->
+
+    <color name="myPrimaryColor">#0097a7</color>
+    <color name="myPrimaryDarkColor">#00838f</color>
+    <color name="myAccentColor">#00838f</color>
+    <color name="myDrawerBackground">#F2F2F2</color>
+    <color name="myWindowBackground">#DEDEDE</color>
+    <color name="myTextPrimaryColor">#000000</color>
+    <color name="backMain">#e0e0e0</color>
+    <color name="vac_dewasa">#0277bd</color>
+    <color name="vac_anak">#2e7d32</color>
+    <color name="myNavigationColor">#000000</color>
+    <color name="myBack">#ECEFF1</color>
+    <color name="selected_gray">#ffdbdbdb</color>
+    <color name="myShadow">#CFD8DC</color>
+    <color name="myLine">#DEDEDE</color>
+    <color name="booked">#64DD17</color>
+    <color name="unbooked">#D50000</color>
+    <color name="activate_text_color">#FAAF00</color>
+    <color name="deactivate_text_color">#585756</color>
+    <color name="background_tab_pressed">#00838f</color>
+    <color name="underline_tabs">#00838f</color>
+    <color name="transparent">#00000000</color>
+    <color name="greyText">#606060</color>
+    <color name="wait_list">#fefae4</color>
+    <color name="confirm_list">#f8feff</color>
+    <color name="greenOld">#0d7b08</color>
+    <color name="orane">#FAAF00</color>
+	<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

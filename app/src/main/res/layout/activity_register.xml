@@ -1,0 +1,389 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:background="@color/myBack"
+    tools:context="myForm.myForm.Register">
+    <include
+        android:id="@+id/toolbar_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/rl1_reg"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/toolbar_bar"
+        android:background="#fff"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imgProfileReg"
+            android:src="@drawable/ic_profile"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            />
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:id="@+id/btnEditReg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/imgProfileReg"
+            android:background="@null"
+            android:text="Edit Photo"
+            android:textSize="10sp"
+            android:textColor="@color/myPrimaryDarkColor"
+            android:textAllCaps="false"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:id="@+id/vLineReg"
+            android:layout_toRightOf="@+id/imgProfileReg"
+            android:background="@color/myWindowBackground"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/txFirstReg"
+            android:layout_toRightOf="@+id/vLineReg"
+            android:layout_marginTop="5dp"
+            android:hint="First Name"
+            android:background="@null"
+            android:layout_marginLeft="15dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/vGaris1Reg"
+            android:background="@color/myWindowBackground"
+            android:layout_toRightOf="@+id/vLineReg"
+            android:layout_below="@+id/txFirstReg"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/txLasttReg"
+            android:layout_toRightOf="@+id/vLineReg"
+            android:layout_below="@+id/vGaris1Reg"
+            android:hint="Last Name"
+            android:background="@null"
+            android:layout_marginLeft="15dp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:id="@+id/rl2_reg"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/rl1_reg"
+    android:background="#fff"
+    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvGenderReg"
+            android:text="Gender"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/vGaris2Reg"
+            android:background="@color/myWindowBackground"
+            android:layout_below="@+id/tvGenderReg"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBirthReg"
+            android:text="Birth Date"
+            android:layout_below="@+id/vGaris2Reg"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <Spinner
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:id="@+id/spGenderReg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right|center"
+            android:background="@null"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="DD-MM-YYYY"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:clickable="true"
+            android:id="@+id/txBirthReg"
+            android:layout_below="@+id/vGaris2Reg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:background="@null"
+            android:gravity="center|left"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/rl3_reg"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl2_reg"
+        android:background="#fff"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEmailReg"
+            android:text="Email"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/vGaris3Reg"
+            android:background="@color/myWindowBackground"
+            android:layout_below="@+id/tvEmailReg"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPasswordReg"
+            android:text="Password"
+            android:layout_below="@+id/vGaris3Reg"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/txEmailReg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:hint="your@email.com"
+            android:gravity="end|center"
+            android:inputType="textEmailAddress"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/txPasswordReg"
+            android:hint="password"
+            android:layout_below="@+id/vGaris3Reg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:gravity="end|center"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/rl4_reg"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl3_reg"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCountryReg"
+            android:text="Country"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/vGaris4Reg"
+            android:background="@color/myWindowBackground"
+            android:layout_below="@+id/tvCountryReg"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvProfesiReg"
+            android:text="Profession"
+            android:layout_below="@+id/vGaris4Reg"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <Spinner
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:id="@+id/spCountryREg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            />
+        <Spinner
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:id="@+id/spProfesiReg"
+            android:layout_below="@+id/vGaris4Reg"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:gravity="end"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl5_reg"
+        android:layout_below="@id/rl4_reg"
+        android:layout_marginTop="5dp"
+        android:background="@color/myBack">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbRead"
+            android:layout_marginLeft="15dp"
+            android:text="I have read and accept the"
+            android:textSize="12sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/btnLicenseReg"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="25dp"
+            android:background="@null"
+            android:text="License Agreement"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:gravity="left|top"
+            android:textColor="@color/myPrimaryDarkColor"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:id="@+id/tvAnd"
+            android:layout_toRightOf="@+id/btnLicenseReg"
+            android:layout_marginTop="25dp"
+            android:text="and"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            />
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:id="@+id/btnPrivacyReg"
+            android:layout_marginTop="25dp"
+            android:background="@null"
+            android:text="Privacy Notice"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:gravity="left|top"
+            android:textColor="@color/myPrimaryDarkColor"
+            android:layout_toRightOf="@+id/tvAnd"
+            />
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="35dp"
+            android:id="@+id/btnRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btnLicenseReg"
+            android:background="@drawable/btn_register"
+            android:layout_marginTop="20dp"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/myShadow"
+        android:layout_below="@+id/rl1_reg"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/myShadow"
+        android:layout_below="@+id/rl2_reg"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/myShadow"
+        android:layout_below="@+id/rl3_reg"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/myShadow"
+        android:layout_below="@+id/rl4_reg"
+        />
+
+
+</RelativeLayout>

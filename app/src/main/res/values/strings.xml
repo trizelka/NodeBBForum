@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">myForum</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="gender">
+        <item>"Select"</item>
+        <item>"Male"</item>
+        <item>"Female"</item>
+    </string-array>
+
+    <string-array name="profesi">
+        <item>Select</item>
+        <item>Professor</item>
+        <item>Teacher</item>
+        <item>Actor</item>
+        <item>Photographer</item>
+        <item>Writer</item>
+        <item>Dentist</item>
+        <item>doctors</item>
+        <item>Nurse</item>
+        <item>Pathologist</item>
+        <item>Pharmacist</item>
+        <item>Psychologist</item>
+        <item>Accountant</item>
+        <item>Architect</item>
+        <item>Engineer</item>
+        <item>Firefighter</item>
+        <item>Judge</item>
+        <item>Military officer</item>
+        <item>Police officer</item>
+        <item>Pilot</item>
+        <item>Sea Captain</item>
+        <item>Driver</item>
+        <item>Astronomer</item>
+        <item>Biologist</item>
+        <item>Geologist</item>
+        <item>Scientist</item>
+        <item>Web developer</item>
+        <item>Graphic designer</item>
+        <item>Web designer</item>
+        <item>Programmer</item>
+        <item>Farmer</item>
+        <item>Fashion Designer</item>
+        <item>Film Director</item>
+        <item>Atlete</item>
+        <item>Musician</item>
+        <item>Artist</item>
+        <item>Presenter</item>
+        <item>Sales</item>
+        <item>Journalist</item>
+        <item>Shop Keeper</item>
+        <item>Zookeeper</item>
+    </string-array>
+
+    <string-array name="country">
+        <item>"Select"</item>
+        <item>"Afganistan"</item>
+        <item>"Afrika"</item>
+        <item>"Bangladesh"</item>
+        <item>"Hungaria"</item>
+        <item>"Indonesia"</item>
+        <item>"Japan"</item>
+        <item>"South Korea"</item>
+        <item>"United Kingdom"</item>
+        <item>"Rusia"</item>
+    </string-array>
+
+</resources>
